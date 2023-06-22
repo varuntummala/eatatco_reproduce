@@ -1,0 +1,91 @@
+html{
+}
+body{
+    background-color: #000000;
+  }
+  .navbar {
+    z-index: 1000;
+    background-color: transparent !important;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #fff; /* Set the color of the navigation links */
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing:1px
+  }
+
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus {
+    color: lightgray; /* Set the color of the navigation links when hovered or focused */
+  }
+.dropdown-menu {
+  background-color: rgba(227,37,38,0.8);
+  border-radius: 0;
+}
+.dropdown-item{
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+}
+.dropdown-item:hover{
+  background-color:transparent;
+  color: rgba(255, 255, 255, 0.64);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  
+}
+  .hero {
+    margin-top: -90px;
+    padding-bottom: 90px;
+  }
+
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as desired */
+  }
+  
+  .carousel-caption {
+    z-index: 1; /* Ensure captions appear on top of the overlay */
+    position: absolute;
+    top: 50%;
+  }
+.hero h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+  .hero p {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
+.btn{
+  border-radius: 0;
+  background-color: #e32526;
+  font-family: Roboto, sans-serif;
+  border-color: #e32526;
+}
+
+.btn:hover{
+  background-color: #000000;
+  border-color: #000000;
+}
+
+footer .navbar{
+    background-color: #000000 !important
+}
+footer a{
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
