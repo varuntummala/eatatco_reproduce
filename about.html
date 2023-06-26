@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    .slide {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .site-logo {
+      top: 0;
+      left: 0;
+      padding: 5px; /* Some padding */
+      width: 100px; /* Set a small width */
+    }
+
+    .slide-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .slide-text2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>I'm About Page</h1>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="site-logo" src="logo.png"></i>Slideshow Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#slide1">Slide 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#slide2">Slide 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#slide3">Slide 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="slide" style="background-image: url('https://images.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/mediausers/custom_fields_galleries/images/S4AMIXFOQOK64fFbKqoS_Vietnamese%20Ramen.jpg');"></div>
+        <div class="slide-text">
+            <h1>About</h1>
+            <span>At CO, find uniquely inspired dishes with fresh, robust flavors and handcrafted cocktails. </span>
+        </div>
+        <!-- Content for Slide 1 -->
+      </div>
+      <div class="carousel-item">
+          <div class="slide" style="background-image: url('https://images.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/images/62441Korean_Short_Rib_Bahn_Mi_Charlotte_Photo_Courtesy_of_CO.jpg');"></div>
+          <div class="slide-text">
+              <h1>THE FOOD</h1>
+              <p>Our menu is full of bright, bold flavors from Southeast Asia that everyone can enjoy. Explore new dishes or taste familiar ones; from noodles to pho, sushi to banh mi.  </p>
+              <p>CO is designed to be a place for gathering. Taste fresh, robust flavors, and cheers with signature cocktails made from scratch, designed to pair perfectly with a variety of dishes on the menu. Gluten-free and vegan options guarantee there’s something for everyone, every time you visit.</p>
+              </span>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class="slide" style="background-image: url('https://images.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/images/30626masa_long.jpg');"></div>
+          <div class="slide-text">
+              <h1>THE bbb</h1>
+              <p>Our menu is full of bright, bold flavors from Southeast Asia that everyone can enjoy. Explore new dishes or taste familiar ones; from noodles to pho, sushi to banh mi.  </p>
+              <p>CO is designed to be a place for gathering. Taste fresh, robust flavors, and cheers with signature cocktails made from scratch, designed to pair perfectly with a variety of dishes on the menu. Gluten-free and vegan options guarantee there’s something for everyone, every time you visit.</p>
+              </span>
+          </div>
+      </div>
+        <div class="carousel-item">
+            <div class="slide" style="background-image: url('https://images.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/images/22264Charlotte_Interior.jpg');"></div>
+            <div class="slide-text">
+                <h2 class="h1">The Space</h2>
+                <p>
+                    Housed in spaces from a historic building in downtown Charleston to a modern, mixed-use development in Charlotte, each location of CO emphasizes unique design. We utilize raw materials to create spaces that are warm, inviting, and contemporary. With open windows, large community tables, and modern touches, you will find a truly enlightened dining experience at CO.
+                </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#carouselExampleIndicators').carousel({
+        interval: 2000, // Set the interval for automatic transitions (in milliseconds)
+        pause: True // Disable pausing when hovering over the carousel
+      });
+    });
+  </script>
 </body>
 </html>
