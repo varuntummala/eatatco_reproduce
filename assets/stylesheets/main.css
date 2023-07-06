@@ -11,11 +11,49 @@
 
 }
 
+.frame {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+.zoomin img {
+    height: 500px;
+    width: 500px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.zoomin img:hover {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.card-img-top {
+    transition: transform 0.3s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
 .location_tile{
     padding-left: 15rem;
     padding-right: 15rem;
 
+
 }
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 100px !important;
+    text-align: center !important;
+    text-align-last: center !important;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 
@@ -32,13 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-.portfolio img{
-    height: 15rem;
-    width: 100%;
-    margin: 1em;
-
-}
 
 
 footer {
